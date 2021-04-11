@@ -45,7 +45,8 @@ public class GameManager : MonoBehaviour
             distance += scrollSpeed * Time.deltaTime;
             distanceText.text = ((int)distance).ToString() + "m";
 
-            IncreaseSpeed(0.1f * Time.deltaTime);
+            // this should happen after every finished spawn sequence
+            //IncreaseSpeed(0.1f * Time.deltaTime);
         }
         if (gameOver && Input.GetMouseButtonDown(0))
         {
